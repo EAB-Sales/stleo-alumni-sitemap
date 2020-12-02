@@ -12,8 +12,7 @@ export default class MyChart extends Component {
   }
 
   componentDidMount() {
-    console.log(this.props)
-    // console.log("nodes", this.props.nodes.allSmartSheetRow.edges)
+    // console.log("this.propsssssssssss", this.props.nodes)
     this.chart = new OrgChart(this.divRef.current, {
       nodes: this.props.nodes,
       mouseScrool: OrgChart.action.scroll,

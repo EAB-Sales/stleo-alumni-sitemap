@@ -6,11 +6,17 @@ import "../App.css"
 export default function Home({ data }) {
   // const columns = data.allSmartSheetColumn.edges
   const rows = data.allSmartSheetRow.edges
-
+  console.log(
+    "process.env.GATSBY_SMARTSHEET_PAGETITLEID",
+    process.env.GATSBY_SMARTSHEET_PAGETITLEID
+  )
   const filterByPageTitle = item => {
-    if (item.columnId === process.env.GATSBY_SMARTSHEET_PAGETITLEID) {
+    if (item.columnId === 6219804936824708) {
       return true
     }
+    // if (item.columnId === process.env.GATSBY_SMARTSHEET_PAGETITLEID) {
+    //   return true
+    // }
   }
 
   const filteredRows = rows.map(item => {
