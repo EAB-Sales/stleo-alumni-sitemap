@@ -2,4 +2,6 @@ body,
 #root,
 ___gatsby {
   height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }

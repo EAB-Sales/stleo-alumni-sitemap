@@ -6,11 +6,13 @@ import "../App.css"
 export default function Home({ data }) {
   // const columns = data.allSmartSheetColumn.edges
   const rows = data.allSmartSheetRow.edges
-  console.log(
-    "process.env.GATSBY_SMARTSHEET_PAGETITLEID",
-    process.env.GATSBY_SMARTSHEET_PAGETITLEID
-  )
+  // const pageTitleID = process.env.GATSBY_SMARTSHEET_PAGETITLEID
+
   const filterByPageTitle = item => {
+    console.log(
+      "what is the pageTITLE?!?!",
+      process.env.GATSBY_SMARTSHEET_PAGETITLEID
+    )
     if (item.columnId === 6219804936824708) {
       return true
     }
@@ -24,8 +26,9 @@ export default function Home({ data }) {
 
     container.id = item.node.id
     container.pid = item.node.parentId
-
+    console.log("item.node.cells", item.node.cells)
     item.node.cells.filter(filterByPageTitle).map(cell => {
+      console.log("cell.displayValue", cell.displayValue)
       container.name = cell.displayValue
       return console.log("grabbing cells")
     })
