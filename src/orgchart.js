@@ -1842,10 +1842,10 @@ var OrgChart = function (t, e) {
   }),
   void 0 === OrgChart && (OrgChart = {}),
   (OrgChart.idb = {
-    version: 1,
-    dbName: "balkangraph",
-    tableName: "orgchart-js",
-    keyPath: "id",
+    // version: 1,
+    // dbName: "balkangraph",
+    // tableName: "orgchart-js",
+    // keyPath: "id",
   }),
   (OrgChart.idb.db = null),
   (OrgChart.idb._open = function (e) {

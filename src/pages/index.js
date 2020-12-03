@@ -40,7 +40,7 @@ export default function Home({ data }) {
         <a
           href="https://app.smartsheet.com/sheets/87Mc3XWp67RqqrHVxRvqPJW8wR4rRpvpQFg7pV21"
           target="_blank"
-          rel="nofollow"
+          rel="nofollow noopener noreferrer"
         >
           Open SmartSheet
         </a>
