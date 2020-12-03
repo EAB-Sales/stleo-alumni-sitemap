@@ -5,13 +5,15 @@ ___gatsby {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-
+h1 {
+  margin-bottom: 0;
+}
 .ss-link {
   display: block;
+  margin-top: 0.1rem;
 }
 
 .ss-link a {
-  font-size: 0.6em;
   text-decoration: none;
   border-bottom: 1px solid grey;
   color: grey;
