@@ -9,10 +9,6 @@ export default function Home({ data }) {
   // const pageTitleID = process.env.GATSBY_SMARTSHEET_PAGETITLEID
 
   const filterByPageTitle = item => {
-    console.log(
-      "what is the pageTITLE?!?!",
-      process.env.GATSBY_SMARTSHEET_PAGETITLEID
-    )
     if (item.columnId === 1475308955166596) {
       return true
     }
@@ -28,7 +24,6 @@ export default function Home({ data }) {
     container.pid = item.node.parentId
     // console.log("item.node.cells", item.node.cells)
     item.node.cells.filter(filterByPageTitle).map(cell => {
-      console.log("cell.displayValue", cell.displayValue)
       container.name = cell.displayValue
       return console.log("grabbing cells")
     })

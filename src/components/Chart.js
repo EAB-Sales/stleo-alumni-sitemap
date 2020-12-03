@@ -36,7 +36,7 @@ export default class MyChart extends Component {
   }
 
   componentDidMount() {
-    // console.log("this.propsssssssssss", this.props.nodes)
+    console.log("this.propsssssssssss", this.props.nodes)
     this.chart = new OrgChart(this.divRef.current, {
       nodes: this.props.nodes,
       mouseScrool: OrgChart.action.scroll,
