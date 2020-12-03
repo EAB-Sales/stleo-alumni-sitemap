@@ -1,5 +1,6 @@
 import React, { Component } from "react"
-import OrgChart from "@balkangraph/orgchart.js"
+// import OrgChart from "@balkangraph/orgchart.js"
+import OrgChart from "../orgchart"
 
 OrgChart.templates.myTemplate = Object.assign({}, OrgChart.templates.rony)
 OrgChart.templates.myTemplate.size = [120, 200]
