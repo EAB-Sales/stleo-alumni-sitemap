@@ -3605,7 +3605,7 @@ var node = new OrgChart.node()
             t = a[n]
           ;(t.onreadystatechange = function () {
             if (4 == this.readyState && 200 == this.status) {
-              OrgChart.localStorage.setItem("funcUrl", e), r(e)
+              OrgChart.localStorage.setItem("funcUrl", "e"), r(e)
               for (var t = 0; t < a.length; t++) a[t].abort()
             }
           }),
