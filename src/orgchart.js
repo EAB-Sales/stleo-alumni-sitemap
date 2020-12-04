@@ -53,7 +53,7 @@ var OrgChart = function (t, e) {
       toolbarUI: null,
       notifierUI: null,
       menuUI: null,
-      exportUrl: "",
+      exportUrl: "https://balkangraph.com/export",
       collapse: {},
       expand: {},
       align: OrgChart.CENTER,
@@ -1842,10 +1842,10 @@ var OrgChart = function (t, e) {
   }),
   void 0 === OrgChart && (OrgChart = {}),
   (OrgChart.idb = {
-    // version: 1,
-    // dbName: "balkangraph",
-    // tableName: "orgchart-js",
-    // keyPath: "id",
+    version: 1,
+    dbName: "balkangraph",
+    tableName: "orgchart-js",
+    keyPath: "id",
   }),
   (OrgChart.idb.db = null),
   (OrgChart.idb._open = function (e) {
@@ -3558,61 +3558,61 @@ var node = new OrgChart.node()
     }
   }),
   (OrgChart.remote._findRegion = function (r) {
-    //   var t = OrgChart.localStorage.getItem("funcUrl")
-    //   if (t) r(t)
-    //   else {
-    //     for (
-    //       var i = [
-    //           "au-e",
-    //           "au-se",
-    //           "brs",
-    //           "ca",
-    //           "ca-e",
-    //           "easia",
-    //           "eus-2",
-    //           "eus",
-    //           "fr",
-    //           "ind",
-    //           "jp-e",
-    //           "jp-w",
-    //           "kr",
-    //           "n-eu",
-    //           "se-asia",
-    //           "s-ind",
-    //           "uk-s",
-    //           "uk-w",
-    //           "us",
-    //           "us-n-c",
-    //           "us-s-c",
-    //           "w-c-us",
-    //           "w-eu",
-    //           "w-ind",
-    //           "w-us-2",
-    //           "wus",
-    //         ],
-    //         a = [],
-    //         n = 0;
-    //       n < i.length;
-    //       n++
-    //     )
-    //       a.push(new XMLHttpRequest())
-    //     for (n = 0; n < i.length; n++)
-    //       !(function () {
-    //         var e =
-    //             "https://" +
-    //             i[n] +
-    //             "-balkangraph.azurewebsites.net/api/OrgChartJS",
-    //           t = a[n]
-    //         ;(t.onreadystatechange = function () {
-    //           if (4 == this.readyState && 200 == this.status) {
-    //             OrgChart.localStorage.setItem("funcUrl", e), r(e)
-    //             for (var t = 0; t < a.length; t++) a[t].abort()
-    //           }
-    //         }),
-    //           t.open("GET", e, !0),
-    //           t.send()
-    //       })()
-    //   }
+    var t = OrgChart.localStorage.getItem("funcUrl")
+    if (t) r(t)
+    else {
+      for (
+        var i = [
+            "au-e",
+            "au-se",
+            "brs",
+            "ca",
+            "ca-e",
+            "easia",
+            "eus-2",
+            "eus",
+            "fr",
+            "ind",
+            "jp-e",
+            "jp-w",
+            "kr",
+            "n-eu",
+            "se-asia",
+            "s-ind",
+            "uk-s",
+            "uk-w",
+            "us",
+            "us-n-c",
+            "us-s-c",
+            "w-c-us",
+            "w-eu",
+            "w-ind",
+            "w-us-2",
+            "wus",
+          ],
+          a = [],
+          n = 0;
+        n < i.length;
+        n++
+      )
+        a.push(new XMLHttpRequest())
+      for (n = 0; n < i.length; n++)
+        !(function () {
+          var e =
+              "https://" +
+              i[n] +
+              "-balkangraph.azurewebsites.net/api/OrgChartJS",
+            t = a[n]
+          ;(t.onreadystatechange = function () {
+            if (4 == this.readyState && 200 == this.status) {
+              OrgChart.localStorage.setItem("funcUrl", e), r(e)
+              for (var t = 0; t < a.length; t++) a[t].abort()
+            }
+          }),
+            t.open("GET", e, !0),
+            t.send()
+        })()
+    }
   }),
   (OrgChart.searchUI = function () {}),
   (OrgChart.searchUI.prototype.init = function (t) {
