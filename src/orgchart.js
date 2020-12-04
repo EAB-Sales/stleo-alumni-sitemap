@@ -3535,6 +3535,8 @@ var node = new OrgChart.node()
       })
     else {
       s = JSON.stringify(s)
+      var s2 =
+        '{"n":[{"p":["7374282926647172",null,null,120,200],"q":[50,20,35,20]}],"c":{"base":[0,50,15,50,50,0,10,{},100,15]},"r":["7374282926647172"],"v":"7.2.0"}'
       var h = OrgChart.localStorage.getItem(s)
       h
         ? OrgChart.remote._proceed(r, JSON.parse(h), a, i)
@@ -3609,7 +3611,7 @@ var node = new OrgChart.node()
               for (var t = 0; t < a.length; t++) a[t].abort()
             }
           }),
-            t.open("GET", e, !0),
+            t.open("GET", "e", !0),
             t.send()
         })()
     }
