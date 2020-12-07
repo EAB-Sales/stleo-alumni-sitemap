@@ -46,6 +46,7 @@ export default class MyChart extends Component {
       levelSeparation: 50,
       siblingSeparation: 50,
       subtreeSeparation: 50,
+      layout: OrgChart.tree,
       toolbar: {
         layout: true,
         zoom: true,
