@@ -9,7 +9,7 @@ export default function Home({ data }) {
   // const pageTitleID = process.env.GATSBY_SMARTSHEET_PAGETITLEID
 
   const filterByPageTitle = item => {
-    if (item.columnId === 1475308955166596) {
+    if (item.columnId === 1052964067534724) {
       return true
     }
     // if (item.columnId === process.env.GATSBY_SMARTSHEET_PAGETITLEID) {
@@ -38,7 +38,7 @@ export default function Home({ data }) {
       <h1>St. Leo Sitemap</h1>
       <p className="ss-link">
         <a
-          href="https://app.smartsheet.com/sheets/87Mc3XWp67RqqrHVxRvqPJW8wR4rRpvpQFg7pV21"
+          href="https://app.smartsheet.com/sheets/7gp3XM3fr82gf7JHvffhgXHPJWJqVRMw59PmhWJ1"
           target="_blank"
           rel="nofollow noopener noreferrer"
         >
