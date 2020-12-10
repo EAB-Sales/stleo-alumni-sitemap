@@ -36,7 +36,7 @@ export default function Home({ data }) {
       <h1>{pageTitle}</h1>
       <p className="ss-link">
         <a
-          href="https://app.smartsheet.com/sheets/7gp3XM3fr82gf7JHvffhgXHPJWJqVRMw59PmhWJ1"
+          href="https://app.smartsheet.com/sheets/hqHWJP3cJfcXjPchfXcRVVCHfv2qP7QJrRhXxMq1"
           target="_blank"
           rel="nofollow noopener noreferrer"
         >
