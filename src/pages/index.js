@@ -6,15 +6,13 @@ import "../App.css"
 export default function Home({ data }) {
   // const columns = data.allSmartSheetColumn.edges
   const rows = data.allSmartSheetRow.edges
-  // const pageTitleID = process.env.GATSBY_SMARTSHEET_PAGETITLEID
+  const pageTitleID = parseInt(process.env.GATSBY_SMARTSHEET_PAGETITLEID)
+  const pageTitle = process.env.GATSBY_SITE_TITLE
 
   const filterByPageTitle = item => {
-    if (item.columnId === 1052964067534724) {
+    if (item.columnId === pageTitleID) {
       return true
     }
-    // if (item.columnId === process.env.GATSBY_SMARTSHEET_PAGETITLEID) {
-    //   return true
-    // }
   }
 
   const filteredRows = rows.map(item => {
@@ -35,7 +33,7 @@ export default function Home({ data }) {
 
   return (
     <div style={{ height: "100vh" }}>
-      <h1>St. Leo Sitemap</h1>
+      <h1>{pageTitle}</h1>
       <p className="ss-link">
         <a
           href="https://app.smartsheet.com/sheets/7gp3XM3fr82gf7JHvffhgXHPJWJqVRMw59PmhWJ1"
